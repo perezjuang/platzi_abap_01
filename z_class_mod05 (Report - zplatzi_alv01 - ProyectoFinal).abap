@@ -96,6 +96,7 @@ CLASS lcl_main IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD user_command.
+
     CASE sy-ucomm.
       WHEN 'BACK' OR 'EXIT' OR 'CANCEL'.
         LEAVE TO SCREEN 0.
@@ -126,6 +127,6 @@ ENDMODULE.
 *&      Module  USER_COMMAND_0001  INPUT
 *&---------------------------------------------------------------------*
 
-MODULE user_command_0001 INPUT.
+MODULE user_command_9001 INPUT.
   CALL METHOD lcl_main=>user_command.
 ENDMODULE.
